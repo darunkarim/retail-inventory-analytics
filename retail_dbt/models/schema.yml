@@ -1,0 +1,22 @@
+﻿version: 2
+
+models:
+  - name: stg_products
+    columns:
+      - name: product_id
+        data_tests:
+          - not_null
+          - unique
+
+  - name: stg_sales
+    columns:
+      - name: transaction_id
+        data_tests:
+          - not_null
+          - unique
+
+  - name: mart_inventory_risk
+    columns:
+      - name: risk_level
+        data_tests:
+          - not_null
