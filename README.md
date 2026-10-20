@@ -17,26 +17,9 @@ This project analyzes sales velocity, current inventory and supplier lead times 
 - GitHub Actions – Automated pipeline validation
 
 ## Architecture
+The diagram below illustrates the end-to-end data pipeline, from synthetic data generation to automated validation and reporting.
 
-Synthetic CSV Data
-        |
-        v
-Python Ingestion
-        |
-        v
-DuckDB Raw Tables
-        |
-        v
-dbt Staging Models
-        |
-        v
-Inventory Risk Mart
-        |
-        v
-dbt Data Tests
-        |
-        v
-CSV Risk Report
+![Retail Inventory Analytics Pipeline](images/pipeline_architecture.png)
 
 ## Dataset
 
